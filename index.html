@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Zhao</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -12,13 +13,15 @@
         <div class="pop-content">
             <div class="exit" id="exit">+</div>
             <h2>Contact</h2>
-            <form action="#" style ="padding-bottom: 22px;">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <form action="https://formspree.io/xgenvnwn"
+            method="POST" style ="padding-bottom: 22px;">
+                <input type="text" placeholder="Name" class="name" name="Name">
+                <input type="email" placeholder="Email" class="email" name="From">
+                <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message" class="messages" name="message"></textarea>
                 <br>
-                <a href="#" class="submit">Submit</a>
-                <br>
+                <div class="status"> </div>
+                <button type="submit" class="submit">Submit</button>
+                
             </form>
         </div>
     </div>
@@ -198,6 +201,9 @@
                 <ul>
                     <li>
                         <p>- Proficient with Java, Python, SQL and C#</p>
+                    </li>
+                    <li>
+                        <p>- Experience with HTML, CSS and Javascript</p>
                     </li>
                     <li>
                         <p>- Microsoft Office Excel Specialist Certification </p>
